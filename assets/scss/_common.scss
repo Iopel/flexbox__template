@@ -59,8 +59,12 @@ h1{
 a{
     text-decoration: none;
     color: $color-light;
+    transition: color 0.25s;
         
-        
+        &:hover,
+        &:focus{
+            color:$color-accent;
+        }
 }
 
 .container{
