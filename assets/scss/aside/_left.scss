@@ -1,0 +1,112 @@
+.left{
+    @include md-min{
+        order: 1;
+        margin-bottom: $gap / 2;
+        flex: 0 0 $left-sidebar-width;
+
+    }
+    @include md-xs{
+        order: 2;
+        padding-right: $gap / 4;
+        width: 50%;
+    }
+
+    @include xs{
+        margin-bottom: 0;
+        width: 100%;
+        order: 2;
+    }
+  
+}
+
+
+.widget{
+
+    
+    padding: $gap / 2;
+    margin: 0 0 $gap / 2;
+    color:$color-light ;
+    background-color: rgba($color-dark, 0.5);
+    border-radius: 7px;
+
+    h3{
+        font-family: $font-header;
+
+        margin-top: $gap / 6;
+        padding-bottom: $gap / 3;
+        letter-spacing: 1.5px;
+        border-bottom: 1px solid rgba($color-dark, 0.5);
+        
+        font-weight: 300;
+    }
+
+    &-search{
+
+        form{
+            position: relative;
+            margin: 15px 0 7px;
+
+        }
+
+        &__input{
+            font-size: 0.85rem;
+            width: 100%;
+            padding: 7px 8px 7px 40px;
+            color:$color-light ;
+            text-overflow: ellipsis;
+            border: 1px solid rgba($color-light, 0.15);
+            border-radius: 4px;
+            background: rgba($color-light, 0.1);
+
+            &::placeholder{
+                color: rgba($color-light,0.75);
+            }
+
+        }
+
+        &__btn{
+            position: absolute;
+            top: 1px;
+            bottom: 1px;
+            left: 1px;
+            background-color: transparent;
+            border: none;
+            border-right: 1px solid rgba($color-light, 0.1);
+            color: $color-light;
+        }
+    }
+
+    &-categories{
+        &__list{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            &-item{
+                a{
+                    padding: 5px 0;
+                    border-radius: 4px;
+                    display: block;
+                    transition: padding-left 0.5s;
+                }
+                
+            }
+        }
+
+        
+    }
+
+    
+    &-text{
+        p{
+        
+            color: rgba($color-light, 0.8);
+            
+            line-height: 2em;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

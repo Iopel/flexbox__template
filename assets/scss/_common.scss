@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    color: $color-light;
+    line-height: 1.5em;
+    font-family: $font-main;
+
+}
+
+body{
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    opacity: 1 !important;
+    background-color: $color-warning;
+    background-image: url(../img/global-bg.jpg); 
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
+
+    @include lg-min{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    @include lg{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+}
+
+h1{
+
+    line-height: 1.5em;
+    letter-spacing: 3px;
+    font-weight: 300;
+
+    font-family: $font-header;
+    
+    
+
+
+    @include sm-min{
+        font-size: 2rem;
+    }
+    @include sm-xs{
+        font-size: 1,5rem;
+    }
+    
+    @include xs{
+        font-size: 1rem;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $color-light;
+        
+        
+}
+
+.container{
+    display: flex;
+    @include lg{
+        flex-wrap: wrap;
+    }
+}

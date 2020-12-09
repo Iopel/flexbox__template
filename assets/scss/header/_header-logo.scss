@@ -1,0 +1,72 @@
+.header-logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include sm-min{
+        padding: 45px 15px;
+    }
+    @include sm{
+        padding: 15px 15px;
+    }
+
+    &__img{
+        display: block;
+
+        @include sm-min{
+            margin-bottom: 30px;
+            max-width: 400px;
+        }
+
+        @include sm-xs{
+            margin-bottom: 15px;
+            max-width: 300px;
+        }
+
+        @include xs{
+            margin-bottom: 15px;
+            max-width: 80%;
+        }
+    }
+
+    &__title{
+        display: block;
+        font-family: $font-header;
+        font-weight: 300;
+        margin-bottom: 15px;
+        letter-spacing: 5px;
+        color:$color-light ;
+        text-align: center;
+
+        @include sm-min{
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+
+        @include sm-xs{
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+
+        @include xs{
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    &__description{
+        display: block;
+        text-align: center;
+
+        @include sm-min{
+            letter-spacing: 0.2em;
+            font-weight: 700;
+        }
+
+        @include sm{
+            letter-spacing: 0.1em;
+            line-height: 1.25em;
+            font-size: 0.875rem;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.header-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color-dark, 0.3);
+    align-items: center;
+    
+
+    &__btn{
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background-color: $color-dark;
+        opacity: 0.2;
+        justify-content: center;
+        align-items: center;
+
+        @include sm-min{
+            display: none;
+        }
+
+    }
+
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+
+        a{
+            display: block;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 4px;
+        }
+    }
+
+    &__list-item{
+
+        a{
+            &:hover,
+            &:focus{
+                background: rgba($color-dark, 0.3);
+                color: $color-accent;
+                
+                text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+            }
+        }
+    }
+
+
+    &__list-item.active a {
+        color: #bb1a1a;
+        background: rgba(0, 0, 0, 0.4);
+        text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+    }
+
+}
