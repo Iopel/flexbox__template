@@ -18,12 +18,12 @@
             max-width: 400px;
         }
 
-        @include sm-xs{
+        @include sm-xx{
             margin-bottom: 15px;
             max-width: 300px;
         }
 
-        @include xs{
+        @include xx{
             margin-bottom: 15px;
             max-width: 80%;
         }
@@ -50,7 +50,7 @@
 
         @include xs{
             font-size: 1.5rem;
-            line-height: 2.5rem;
+            line-height: 2rem;
         }
     }
 
